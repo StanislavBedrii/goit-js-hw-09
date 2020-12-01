@@ -1,19 +1,12 @@
-const { get } = require("lodash");
+import value from "./js/a";
+import "./css/style.scss";
 
-const message = 'Node JS';
-console.log(message);
+const add = (a, b) => a + b;
 
-class User {
-    constructor(name) {
-        this.name = name;
-    }
+add(2, 3);
 
+console.log(value);
 
-    get name() {
-        return this.name
-    }
-}
+const mult = (a, b) => a * b;
 
-const mango = new User('Mango');
-
-console.log(mango.name);
+mult(3, 3);
